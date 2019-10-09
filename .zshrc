@@ -60,6 +60,9 @@ rssh(){
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 
+alias grh="git reset --hard"
+alias gcp="git cherry-pick"
+
 alias gi="git init"
 alias gs="git status"
 alias gsh="git show"
