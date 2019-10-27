@@ -8,6 +8,8 @@ sudo pacman -Syy
 sudo pacman -S ruby --noconfirm
 #Install rbenv ruby version manager
 yay -S rbenv --noconfirm
+# Install bundler
+gem install bundler:1.17.1
 
 #[Postgresql]
 sudo pacman -S postgresql --noconfirm
@@ -16,6 +18,9 @@ sudo -u postgres -i initdb --locale $LANG -E UTF8 -D /var/lib/postgres/data
 #Enable postgres services
 sudo systemctl start postgresql.service
 sudo systemctl enable postgresql.service
+
+#[Vagrant]
+sudo pacman -S vagrant --noconfirm
 
 #[Fonts]
 sudo pacman -S otf-fira-code --noconfirm

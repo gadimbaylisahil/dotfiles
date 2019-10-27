@@ -8,6 +8,25 @@ sudo pacman -Syy
 sudo pacman -S ruby --noconfirm
 #Install rbenv ruby version manager
 yay -S rbenv --noconfirm
+gem install bundler -v 1.17.1
+
+#[Vagrant]
+sudo pacman -S vagrant --noconfirm
+#Install bridge
+sudo pacman -Syu dnsmasq net-tools bridge-utils
+#Ensure lxc-net is enabled
+echo "USE_LXC_BRIDGE=true" | sudo tee -a /etc/default/lxc-net
+echo "lxc.net.0.type = veth\nlxc.net.0.link = lxcbr0\nlxc.net.0.flags = up\nlxc.net.0.hwaddr = 00:16:3e:xx:xx:xx" | sudo tee -a /etc/lxc/default.conf
+#Start lxc-net
+sudo systemctl start lxc-net
+#Enable lxc-net
+sudo systemctl enable lxc-net.service
+
+#[LXC]
+sudo pacman -S lxc arch-install-scripts --noconfirm
+
+#[Ansible]
+sudo pacman -S ansible --noconfirm
 
 #[Postgresql]
 sudo pacman -S postgresql --noconfirm
