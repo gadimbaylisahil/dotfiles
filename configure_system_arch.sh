@@ -3,12 +3,17 @@
 # Refresh pacman
 sudo pacman -Syy
 
+# Install yay package manger
+sudo pacman -S yay --noconfirm
+
+#[Development]
 #[Ruby]
 #Install
 sudo pacman -S ruby --noconfirm
 #Install rbenv ruby version manager
 yay -S rbenv --noconfirm
 yay -S ruby-build --noconfirm
+#Install bundler
 gem install bundler -v 1.17.1
 
 #[Vagrant]
@@ -17,7 +22,7 @@ sudo pacman -S vagrant --noconfirm
 vagrant plugin install vagrant-lxc
 #Install bridge
 sudo pacman -Syu dnsmasq net-tools bridge-utils
-#Ensure lxc-net is enabled
+#Set bridge configurations
 echo "USE_LXC_BRIDGE=true" | sudo tee -a /etc/default/lxc-net
 echo "lxc.net.0.type = veth\nlxc.net.0.link = lxcbr0\nlxc.net.0.flags = up\nlxc.net.0.hwaddr = 00:16:3e:xx:xx:xx" | sudo tee -a /etc/lxc/default.conf
 #Start lxc-net
