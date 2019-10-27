@@ -45,8 +45,6 @@ yay -S slack-desktop --noconfirm
 yay -S spotify --noconfirm
 #Inkdrop Note Application
 yay -S inkdrop --noconfirm
-# Neovim
-sudo pacman -S neovim --noconfirm
 
 #[Theming]
 mkdir ~/customization
@@ -70,6 +68,3 @@ cp zsh/.zshrc ~/.zshrc
 cp xresources/.Xresources ~/.Xresources
 cp i3/config ~/.config/i3/config
 xrdb ~/.Xresources
-
-#[Copy wallpapers]
-cp -r ~/development/dotfiles/ ~/Pictures
