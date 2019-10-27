@@ -12,6 +12,8 @@ gem install bundler -v 1.17.1
 
 #[Vagrant]
 sudo pacman -S vagrant --noconfirm
+#Install lxc plugin
+vagrant plugin install vagrant-lxc
 #Install bridge
 sudo pacman -Syu dnsmasq net-tools bridge-utils
 #Ensure lxc-net is enabled
