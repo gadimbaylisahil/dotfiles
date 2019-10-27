@@ -94,3 +94,7 @@ cp zsh/.zshrc ~/.zshrc
 cp xresources/.Xresources ~/.Xresources
 cp i3/config ~/.config/i3/config
 xrdb ~/.Xresources
+
+#[Configure GIT]
+git config --global user.name "Sahil Gadimbayli"
+git config --global user.email "sahil.gadimbay@gmail.com"
