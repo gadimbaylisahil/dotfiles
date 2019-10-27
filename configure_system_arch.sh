@@ -69,6 +69,9 @@ yay -S spotify --noconfirm
 yay -S inkdrop --noconfirm
 #Bluetooth manager
 yay -S blueman --noconfirm
+#Protonmail client
+sudo snap install protonmail-desktop-unofficial
+
 #[Theming]
 mkdir ~/customization
 cd ~/customization
