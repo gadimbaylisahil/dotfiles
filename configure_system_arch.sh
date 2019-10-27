@@ -66,7 +66,8 @@ yay -S slack-desktop --noconfirm
 yay -S spotify --noconfirm
 #Inkdrop Note Application
 yay -S inkdrop --noconfirm
-
+#Bluetooth manager
+yay -S blueman --noconfirm
 #[Theming]
 mkdir ~/customization
 cd ~/customization
