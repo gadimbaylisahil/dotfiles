@@ -8,6 +8,7 @@ sudo pacman -Syy
 sudo pacman -S ruby --noconfirm
 #Install rbenv ruby version manager
 yay -S rbenv --noconfirm
+yay -S ruby-build --noconfirm
 gem install bundler -v 1.17.1
 
 #[Vagrant]
