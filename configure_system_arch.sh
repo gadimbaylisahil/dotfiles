@@ -7,27 +7,23 @@ sudo pacman -Syy
 sudo pacman -S yay --noconfirm
 
 #[Development]
-#[Ruby]
-#Install
+#Ruby
 sudo pacman -S ruby --noconfirm
-#Install rbenv ruby version manager
-yay -S rbenv --noconfirm
-yay -S ruby-build --noconfirm
-#Install bundler
+#rbenv ruby version manager
+yay -S rbenv ruby-build --noconfirm
+#Bundler
 gem install bundler -v 1.17.1
 
 #[Vagrant]
 sudo pacman -S vagrant --noconfirm
-#Install lxc plugin
+#LXC Plugin
 vagrant plugin install vagrant-lxc
-#Install bridge
+#Install and configure bridge
 sudo pacman -Syu dnsmasq net-tools bridge-utils
-#Set bridge configurations
 echo "USE_LXC_BRIDGE=true" | sudo tee -a /etc/default/lxc-net
 echo "lxc.net.0.type = veth\nlxc.net.0.link = lxcbr0\nlxc.net.0.flags = up\nlxc.net.0.hwaddr = 00:16:3e:xx:xx:xx" | sudo tee -a /etc/lxc/default.conf
-#Start lxc-net
+#Start and enable lxc-net service
 sudo systemctl start lxc-net
-#Enable lxc-net
 sudo systemctl enable lxc-net.service
 
 #[LXC]
@@ -40,7 +36,7 @@ sudo pacman -S ansible --noconfirm
 sudo pacman -S postgresql --noconfirm
 #Create new db cluster
 sudo -u postgres -i initdb --locale $LANG -E UTF8 -D /var/lib/postgres/data
-#Enable postgres services
+#Start and enable postgres service
 sudo systemctl start postgresql.service
 sudo systemctl enable postgresql.service
 
@@ -74,8 +70,6 @@ yay -S spotify --noconfirm
 yay -S inkdrop --noconfirm
 #Bluetooth manager
 yay -S blueman --noconfirm
-#Protonmail client
-sudo snap install protonmail-desktop-unofficial
 
 #[Theming]
 mkdir ~/customization
