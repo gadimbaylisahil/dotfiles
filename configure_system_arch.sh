@@ -94,6 +94,12 @@ cp xresources/.Xresources ~/.Xresources
 cp i3/config ~/.config/i3/config
 xrdb ~/.Xresources
 
+#[Useful packages, CLIs]
+# Easy untar
+yay -s dtrx --noconfirm
+# Catfish search tool
+sudo pacman -S catfish --noconfirm
+
 #[Configure GIT]
 git config --global user.name "Sahil Gadimbayli"
 git config --global user.email "sahil.gadimbay@gmail.com"
