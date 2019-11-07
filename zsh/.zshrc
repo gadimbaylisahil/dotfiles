@@ -53,10 +53,16 @@ rssh(){
   ssh-add -l
 }
 
-
 # Compilation flags
+
 # export ARCHFLAGS="-arch x86_64"
 
+# Functions
+clean_git_branches(){
+  git branch | grep -v "develop\|master" | xargs git branch -D
+}
+
+# Aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 
