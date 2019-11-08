@@ -70,6 +70,8 @@ yay -S spotify --noconfirm
 yay -S inkdrop --noconfirm
 #Bluetooth manager
 yay -S blueman --noconfirm
+# Neovim
+sudo pacman -S neovim --noconfirm
 
 #[Theming]
 mkdir ~/customization
@@ -80,18 +82,21 @@ cd i3wm-themer
 cd src
 python i3wm-themer.py --config config.yaml --load themes/000.json
 
+#[ZSH]
+sudo pacman -S zsh --noconfirm
+
 #[oh-my-zsh]
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #[Shell plugins]
-yay -S zsh-autosuggestions --noconfirm
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 #[Replace dotfiles from remote]
 cd ~/development/dotfiles
 git pull
-cp zsh/.zshrc ~/.zshrc
-cp xresources/.Xresources ~/.Xresources
-cp i3/config ~/.config/i3/config
+cp zsh/.zshrc ~/
+cp xresources/.Xresources ~/
+cp i3/config ~/.config/i3/
 xrdb ~/.Xresources
 
 #[Useful packages, CLIs]
