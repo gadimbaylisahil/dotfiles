@@ -196,7 +196,7 @@ mode "resize" {
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
-# exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
@@ -222,6 +222,7 @@ smart_gaps on
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
@@ -230,6 +231,7 @@ mode "$mode_gaps" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
 mode "$mode_gaps_inner" {
         bindsym plus  gaps inner current plus 5
         bindsym minus gaps inner current minus 5
@@ -242,6 +244,7 @@ mode "$mode_gaps_inner" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
 mode "$mode_gaps_outer" {
         bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
@@ -255,10 +258,11 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# set power-manager
-exec --no-startup-id mate-power-manager
-
 # volume control
 bindsym $mod+Ctrl+Up exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
 bindsym $mod+Ctrl+Down exec --no-startup-id amixer -c 0 -q set Master 2dB- unmute
 bindsym $mod+Ctrl+m exec --no-startup-id amixer -q set Master toggle
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
