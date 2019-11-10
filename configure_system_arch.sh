@@ -11,8 +11,13 @@ sudo pacman -S yay --noconfirm
 sudo pacman -S ruby --noconfirm
 #rbenv ruby version manager
 yay -S rbenv ruby-build --noconfirm
+rbenv install 2.6.5
+rbenv global 2.6.5
 #Bundler
 gem install bundler -v 1.17.1
+
+#Elixir
+sudo pacman -S elixir --noconfirm 
 
 #[Vagrant]
 sudo pacman -S vagrant --noconfirm
