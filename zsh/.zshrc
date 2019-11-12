@@ -12,6 +12,9 @@ PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sgadimbayli/.oh-my-zsh"
 
+#Elixir
+export PATH="$PATH:/path/to/elixir/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
