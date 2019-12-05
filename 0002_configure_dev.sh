@@ -1,8 +1,7 @@
 #!/bin/env bash
 
 # Refresh pacman
-sudo pacman -Syy
-
+sudo pacman -Syu
 #[Development]
 #Ruby
 sudo pacman -S ruby --noconfirm
@@ -21,7 +20,7 @@ sudo pacman -S vagrant --noconfirm
 #LXC Plugin
 vagrant plugin install vagrant-lxc
 #Install and configure bridge
-sudo pacman -Syu dnsmasq net-tools bridge-utils
+sudo pacman -S dnsmasq net-tools bridge-utils
 echo "USE_LXC_BRIDGE=true" | sudo tee -a /etc/default/lxc-net
 echo "lxc.net.0.type = veth\nlxc.net.0.link = lxcbr0\nlxc.net.0.flags = up\nlxc.net.0.hwaddr = 00:16:3e:xx:xx:xx" | sudo tee -a /etc/lxc/default.conf
 #Start and enable lxc-net service
