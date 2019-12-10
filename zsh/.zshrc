@@ -65,6 +65,10 @@ clean_git_branches(){
   git branch | grep -v "develop\|master" | xargs git branch -D
 }
 
+clean_orphan_packages() {
+  pacman -Rns $(pacman -Qtdq)	
+}
+
 # Aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
