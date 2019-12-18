@@ -1,5 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Fix for unknown terminal type in remote connections
@@ -15,10 +13,6 @@ export ZSH="/home/sgadimbayli/.oh-my-zsh"
 #Elixir
 export PATH="$PATH:/path/to/elixir/bin"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="ys"
 
 DISABLE_UPDATE_PROMPT="true"
@@ -27,20 +21,12 @@ export UPDATE_ZSH_DAYS=30
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
 
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
 zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 export LANG=en_US.UTF-8
 
@@ -65,8 +51,18 @@ clean_git_branches(){
   git branch | grep -v "develop\|master" | xargs git branch -D
 }
 
+rssh(){
+  eval "$(ssh-agent)"
+  ssh-add
+  ssh-add -l
+}
+
 clean_orphan_packages() {
   pacman -Rns $(pacman -Qtdq)	
+}
+
+automatic_high_fidelity_in_sound_devices() {
+  pactl list sinks short
 }
 
 # Aliases
