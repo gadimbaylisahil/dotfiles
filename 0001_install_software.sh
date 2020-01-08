@@ -41,3 +41,5 @@ sudo pacman -S qbittorrent --noconfirm
 yay -s dtrx --noconfirm
 # Catfish search tool
 sudo pacman -S catfish --noconfirm
+# Terminology terminal with panes
+sudo pacman -S terminology --noconfirm
