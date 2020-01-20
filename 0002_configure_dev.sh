@@ -45,4 +45,4 @@ sudo systemctl enable postgresql.service
 git config --global user.name "Sahil Gadimbayli"
 git config --global user.email "sahil.gadimbay@gmail.com"
 #Protect from windows line endings
-git config --global core.autocrlf true
+git config --global core.autocrlf input
