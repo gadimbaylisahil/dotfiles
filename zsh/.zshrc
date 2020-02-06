@@ -70,7 +70,7 @@ alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 
 alias kk="kill -9"
-
+alias cl="clear"
 alias grh="git reset --hard"
 alias gcp="git cherry-pick"
 
