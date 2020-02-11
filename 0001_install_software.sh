@@ -31,6 +31,7 @@ yay -S slack-desktop --noconfirm
 yay -S spotify --noconfirm
 #Inkdrop Note Application
 yay -S inkdrop --noconfirm
+inkdrop.ipm install spell-checker toc breaks admonition flowchart vibrant-dark-ui
 #Bluetooth manager
 yay -S blueman --noconfirm
 # Neovim
