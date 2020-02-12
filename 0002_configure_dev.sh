@@ -33,6 +33,10 @@ sudo pacman -S lxc arch-install-scripts --noconfirm
 #[Ansible]
 sudo pacman -S ansible --noconfirm
 
+#[JS]
+sudo pacman -S yarn --noconfirm
+sudo pacmsn -S npm --noconfirm
+
 #[Postgresql]
 sudo pacman -S postgresql --noconfirm
 #Create new db cluster
