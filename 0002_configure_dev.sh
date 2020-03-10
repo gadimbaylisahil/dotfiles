@@ -15,6 +15,10 @@ gem install bundler -v 1.17.1
 #Elixir
 sudo pacman -S elixir --noconfirm
 
+#Docker
+sudo pacman -S docker --noconfirm
+sudo systemctl enable docker.service
+
 #[Vagrant]
 sudo pacman -S vagrant --noconfirm
 #LXC Plugin
