@@ -36,12 +36,6 @@ else
   export EDITOR='nvim'
 fi
 
-rssh(){
-  eval "$(ssh-agent)"
-  ssh-add
-  ssh-add -l
-}
-
 # Compilation flags
 
 # export ARCHFLAGS="-arch x86_64"
@@ -63,6 +57,10 @@ clean_orphan_packages() {
 
 automatic_high_fidelity_in_sound_devices() {
   pactl list sinks short
+}
+
+sync_time {
+  sudo ntpdate 1.ro.pool.ntp.org
 }
 
 # Aliases
