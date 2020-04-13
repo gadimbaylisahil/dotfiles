@@ -12,7 +12,7 @@ export ZSH="/home/sgadimbayli/.oh-my-zsh"
 
 #Elixir
 export PATH="$PATH:/path/to/elixir/bin"
-
+export ERL_AFLAGS="-kernel_shell_history_enabled"
 ZSH_THEME="ys"
 
 DISABLE_UPDATE_PROMPT="true"
