@@ -30,7 +30,7 @@ yay -S slack-desktop --noconfirm
 # Spotify
 yay -S spotify --noconfirm
 #Inkdrop Note Application
-yay -S inkdrop --noconfirm
+sudo snap install inkdrop
 inkdrop.ipm install spell-checker toc breaks admonition flowchart vibrant-dark-ui
 #Speedtest-cli
 sudo pacman -S speedtest-cli --noconfirm
