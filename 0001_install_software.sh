@@ -32,6 +32,10 @@ yay -S spotify --noconfirm
 #Inkdrop Note Application
 sudo snap install inkdrop
 inkdrop.ipm install spell-checker toc breaks admonition flowchart vibrant-dark-ui
+# Telegram desktop
+sudo snap install telegram-desktop
+# Mailspring
+sudo snap install mailspring
 #Speedtest-cli
 sudo pacman -S speedtest-cli --noconfirm
 #Bluetooth manager
