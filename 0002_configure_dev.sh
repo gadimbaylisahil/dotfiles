@@ -15,6 +15,9 @@ gem install bundler -v 1.17.1
 #Elixir
 sudo pacman -S elixir --noconfirm
 
+# Gitlab community edition
+sudo pacman -S gitlab --noconfirm
+
 #Docker
 sudo pacman -S docker --noconfirm
 sudo systemctl enable docker.service
