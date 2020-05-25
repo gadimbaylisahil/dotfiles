@@ -117,5 +117,7 @@ alias bus="bundle update --source"
 alias rmn="rm -rf node_modules"
 alias yi="yarn install"
 
+alias grev="git rev-list --count"
+
 alias brs="bin/rails s"
 alias bru="bundle exec rubocop"

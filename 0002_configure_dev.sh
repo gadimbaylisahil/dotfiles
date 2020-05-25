@@ -40,6 +40,9 @@ sudo pacman -S lxc arch-install-scripts --noconfirm
 #[Ansible]
 sudo pacman -S ansible --noconfirm
 
+#[Exercism]
+sudo snap install exercism
+
 #[JS]
 sudo pacman -S yarn --noconfirm
 sudo pacmsn -S npm --noconfirm
