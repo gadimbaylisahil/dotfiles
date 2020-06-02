@@ -12,6 +12,10 @@ rbenv global 2.6.5
 #Bundler
 gem install bundler -v 1.17.1
 
+# Ruby frameworks
+gem install rails
+gem install hanami
+
 #Elixir
 sudo pacman -S elixir --noconfirm
 
@@ -46,6 +50,7 @@ sudo snap install exercism
 #[JS]
 sudo pacman -S yarn --noconfirm
 sudo pacmsn -S npm --noconfirm
+yarn global add @vue/cli
 
 #[Postgresql]
 sudo pacman -S postgresql --noconfirm
