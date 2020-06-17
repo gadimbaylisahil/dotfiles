@@ -45,6 +45,10 @@ clean_git_branches(){
   git branch | grep -v "develop\|master" | xargs git branch -D
 }
 
+check_services() {
+  sudo netstat -plunt
+}
+
 rssh(){
   eval "$(ssh-agent)"
   ssh-add
