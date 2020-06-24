@@ -16,6 +16,9 @@ gem install bundler -v 1.17.1
 gem install rails
 gem install hanami
 
+# Heroku CLI
+sudo snap install heroku --classic
+
 #Elixir
 sudo pacman -S elixir --noconfirm
 
