@@ -52,3 +52,5 @@ yay -s dtrx --noconfirm
 sudo pacman -S catfish --noconfirm
 # Hugo static site generator
 sudo pacman -S hugo --noconfirm
+# Clipboard tool
+sudo pacman -S xsel --noconfirm
