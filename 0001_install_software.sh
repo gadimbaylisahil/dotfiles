@@ -54,3 +54,5 @@ sudo pacman -S catfish --noconfirm
 sudo pacman -S hugo --noconfirm
 # Clipboard tool
 sudo pacman -S xsel --noconfirm
+# Scrot screenshot utility
+sudo pacman -S scrot --noconfirm
