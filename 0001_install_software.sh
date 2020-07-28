@@ -56,3 +56,5 @@ sudo pacman -S hugo --noconfirm
 sudo pacman -S xsel --noconfirm
 # Scrot screenshot utility
 sudo pacman -S scrot --noconfirm
+# Networking
+sudo pacman -S nmap --noconfirm
