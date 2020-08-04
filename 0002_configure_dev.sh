@@ -21,6 +21,7 @@ sudo snap install heroku --classic
 
 #Elixir
 sudo pacman -S elixir --noconfirm
+sudo pacman -S inotify-tools --noconfirm
 
 # Gitlab community edition
 sudo pacman -S gitlab --noconfirm
