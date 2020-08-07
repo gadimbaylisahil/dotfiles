@@ -24,6 +24,7 @@ export UPDATE_ZSH_DAYS=30
 plugins=(
 git
 zsh-autosuggestions
+zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
