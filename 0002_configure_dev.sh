@@ -69,3 +69,6 @@ git config --global user.name "Sahil Gadimbayli"
 git config --global user.email "sahil.gadimbay@gmail.com"
 #Protect from windows line endings
 git config --global core.autocrlf input
+
+#[Add fish like syntax highlighting]
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
