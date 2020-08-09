@@ -31,9 +31,6 @@ yay -S slack-desktop --noconfirm
 yay -S spotify --noconfirm
 # Okular PDF reader
 sudo snap install okular
-#Inkdrop Note Application
-sudo snap install inkdrop
-inkdrop.ipm install spell-checker toc breaks admonition flowchart vibrant-dark-ui
 # Telegram desktop
 sudo snap install telegram-desktop
 # Mailspring
