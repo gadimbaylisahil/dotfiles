@@ -5,12 +5,10 @@ sudo pacman -Syu
 #[Development]
 #Ruby
 sudo pacman -S ruby --noconfirm
-#rbenv ruby version manager
-yay -S rbenv ruby-build --noconfirm
-rbenv install 2.6.5
-rbenv global 2.6.5
+# asdf-vm Version Manager
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 #Bundler
-gem install bundler -v 1.17.1
+gem install bundler
 
 # Ruby frameworks
 gem install rails

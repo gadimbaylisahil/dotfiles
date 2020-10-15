@@ -14,6 +14,10 @@ sudo systemctl enable --now snapd.socket
 #Create symlink for classic support
 sudo ln -s /var/lib/snapd/snap /snap
 
+#[Online Signatures]
+sudo pacman -S ccid --noconfirm
+# sudo systemctl start pcscd.socket
+# sudo systemctl enable pcscd.socket
 #[3rd Party Software]
 #Thunar file manager
 sudo pacman -S thunar --noconfirm

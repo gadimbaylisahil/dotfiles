@@ -3,9 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 #Fix for unknown terminal type in remote connections
 export TERM=xterm-256color
 
-#Rbenv shims
-eval "$(rbenv init -)"
-PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sgadimbayli/.oh-my-zsh"
@@ -25,6 +23,7 @@ plugins=(
 git
 zsh-autosuggestions
 zsh-syntax-highlighting
+asdf
 )
 
 source $ZSH/oh-my-zsh.sh
