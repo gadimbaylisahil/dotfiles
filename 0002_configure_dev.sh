@@ -28,6 +28,8 @@ sudo pacman -S gitlab --noconfirm
 sudo pacman -S docker --noconfirm
 sudo systemctl enable docker.service
 
+sudo pacman -S docker-compose --noconfirm
+
 #[Vagrant]
 sudo pacman -S vagrant --noconfirm
 #LXC Plugin
