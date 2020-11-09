@@ -2,11 +2,14 @@
 
 # Refresh pacman
 sudo pacman -Syu
+
 #[Development]
 #Ruby
 sudo pacman -S ruby --noconfirm
+
 # asdf-vm Version Manager
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
 #Bundler
 gem install bundler
 
@@ -55,6 +58,9 @@ sudo snap install exercism
 sudo pacman -S yarn --noconfirm
 sudo pacmsn -S npm --noconfirm
 yarn global add @vue/cli
+
+#[Man page alternative]
+npm install tldr -g
 
 #[Postgresql]
 sudo pacman -S postgresql --noconfirm
