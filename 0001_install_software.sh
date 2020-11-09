@@ -59,3 +59,5 @@ sudo pacman -S xsel --noconfirm
 sudo pacman -S scrot --noconfirm
 # Networking
 sudo pacman -S nmap --noconfirm
+# File manager 
+sudo pacman -S mc --noconfirm
