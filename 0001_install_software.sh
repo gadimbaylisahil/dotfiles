@@ -6,26 +6,27 @@ sudo pacman -Syy
 # Install yay package manger
 sudo pacman -S yay --noconfirm
 
-#[Snap Store]
-#Install snap store
+# [Snap Store]
+# Install snap store
 yay -S snapd --noconfirm
-#Enable snap service
+# Enable snap service
 sudo systemctl enable --now snapd.socket
-#Create symlink for classic support
+# Create symlink for classic support
 sudo ln -s /var/lib/snapd/snap /snap
 
-#[Online Signatures]
+# [Online Signatures]
 sudo pacman -S ccid --noconfirm
-# sudo systemctl start pcscd.socket
-# sudo systemctl enable pcscd.socket
-#[3rd Party Software]
-#Thunar file manager
+sudo systemctl start pcscd.socket
+sudo systemctl enable pcscd.socket
+
+# [3rd Party Software]
+# Thunar file manager
 sudo pacman -S thunar --noconfirm
-#Neofetch system reporter
+# Neofetch system reporter
 sudo pacman -S neofetch --noconfirm
-#Firefox developer edition
+# Firefox developer edition
 sudo pacman -S firefox-developer-edition --noconfirm
-#Chromium
+# Chromium
 sudo pacman -S chromium --noconfirm
 # VS Code
 sudo snap install code --classic
@@ -39,9 +40,9 @@ sudo snap install okular
 sudo snap install telegram-desktop
 # Mailspring
 sudo snap install mailspring
-#Speedtest-cli
+# Speedtest-cli
 sudo pacman -S speedtest-cli --noconfirm
-#Bluetooth manager
+# Bluetooth manager
 yay -S blueman --noconfirm
 # Neovim
 sudo pacman -S neovim --noconfirm

@@ -1,0 +1,8 @@
+[user]
+	name = Sahil Gadimbayli
+	email = sahil.gadimbay@gmail.com
+[core]
+	autocrlf = input
+	excludesFile = ~/.gitignore
+[pull]
+	rebase = true
