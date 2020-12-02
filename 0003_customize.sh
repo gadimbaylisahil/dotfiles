@@ -3,17 +3,8 @@
 # Refresh pacman
 sudo pacman -Syy
 
-#[Fonts]
+# Fonts
 sudo pacman -S otf-fira-code --noconfirm
-
-#[Theming]
-mkdir ~/customization
-cd ~/customization
-git clone git@github.com:unix121/i3wm-themer.git
-cd i3wm-themer
-./install_arch.sh
-cd src
-python i3wm-themer.py --config config.yaml --load themes/000.json
 
 #[ZSH]
 sudo pacman -S zsh --noconfirm
@@ -25,10 +16,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sudo pacman -S zsh-autosuggestions --noconfirm
 
-#[Replace dotfiles from remote]
-cd ~/development/dotfiles
-git pull
+# Replace dotfiles
 cp zsh/.zshrc ~/
+cp .gitconfig ~/
+cp .profile ~/
+cp .tool-versions ~/
+cp .xinitrc ~/
+cp gitignore/.gitignore ~/
 cp xresources/.Xresources ~/
 cp i3/config ~/.config/i3/
+
 xrdb ~/.Xresources
