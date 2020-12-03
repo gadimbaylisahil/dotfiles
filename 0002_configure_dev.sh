@@ -16,6 +16,9 @@ gem install bundler
 # Ruby REPL
 gem install pry
 
+# JSON Viewer
+sudo pacman -S jq --noconfirm
+
 # Ruby frameworks
 gem install rails
 gem install hanami
