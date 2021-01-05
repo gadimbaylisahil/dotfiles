@@ -23,6 +23,9 @@ sudo pacman -S jq --noconfirm
 gem install rails
 gem install hanami
 
+# Memcached
+sudo pacman -S memcached --noconfirm
+
 # Heroku CLI
 sudo snap install heroku --classic
 

@@ -62,3 +62,5 @@ sudo pacman -S scrot --noconfirm
 sudo pacman -S nmap --noconfirm
 # File manager 
 sudo pacman -S mc --noconfirm
+# Kazam screen recorder
+sudo yay -S kazam --noconfirm
