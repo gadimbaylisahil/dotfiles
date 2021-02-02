@@ -42,7 +42,7 @@ fi
 
 # Functions
 clean_git_branches(){
-  git branch | grep -v "develop\|master" | xargs git branch -D
+  git branch | grep -v "develop\|master\|main" | xargs git branch -D
 }
 
 check_services() {
